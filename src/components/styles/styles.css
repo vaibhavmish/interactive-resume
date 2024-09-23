@@ -1,0 +1,144 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  box-sizing: border-box;*/
+}
+
+/* Container for the entire app */
+.app-container {
+  width: 800px; /* Set a fixed width */
+  height: 600px; /* Set a fixed height */
+  overflow: auto; /* Allow scrolling if content exceeds the height */
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #0066cc;
+  margin: 10px auto;
+}
+
+/* Navigation Styling */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.tab-navigation button {
+  background-color: #fff;
+  border: 2px solid #0066cc;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0066cc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.interactive{
+  font-size: 0.4em;
+}
+.tab-navigation button:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+.tab-navigation button.active-tab {
+  background-color: #0066cc;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Content Section Styling */
+.content-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+/* Title and Content Styling */
+.content-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1.0rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .tab-navigation {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tab-navigation button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+  }
+}
