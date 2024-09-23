@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Vaibhav Mishra <span className="interactive">(Interactive Resume)</span></h1>
+      <h1>Vaibhav Mishra <span className="interactive">Interactive Resume</span></h1>
       <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="content-section">
       {renderSection()}

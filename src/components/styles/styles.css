@@ -2,20 +2,19 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #FDF5E6; /* Light cream background */
+  color: #333; /* Dark gray text for contrast */
   display: flex;
   justify-content: center;
   align-items: center;
-/*  box-sizing: border-box;*/
 }
 
 /* Container for the entire app */
 .app-container {
   width: 800px; /* Set a fixed width */
   height: 600px; /* Set a fixed height */
-  overflow: auto; /* Allow scrolling if content exceeds the height */
-  background-color: #fff;
+/*  overflow: auto; /* Allow scrolling if content exceeds the height */
+  background-color: #FFFFFF; /* White background for the container */
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
@@ -30,7 +29,7 @@ body {
 /* Header Styling */
 h1 {
   text-align: center;
-  color: #4a4a4a;
+  color: #FF6347; /* Warm Tomato Red for the heading */
   font-size: 2.5rem;
   letter-spacing: 1.5px;
   margin-bottom: 30px;
@@ -43,7 +42,7 @@ h1::after {
   display: block;
   width: 80px;
   height: 4px;
-  background-color: #0066cc;
+  background-color: #2A9D8F; /* Calming Teal for the line under heading */
   margin: 10px auto;
 }
 
@@ -56,55 +55,58 @@ h1::after {
 }
 
 .tab-navigation button {
-  background-color: #fff;
-  border: 2px solid #0066cc;
+  background-color: #FFFFFF;
+  border: 2px solid #2A9D8F; /* Teal border */
   border-radius: 25px;
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: 500;
-  color: #0066cc;
+  color: #2A9D8F; /* Teal text */
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;
 }
 
 .interactive{
-  font-size: 0.4em;
+  font-size: 18px;
 }
 .tab-navigation button:hover {
-  background-color: #0066cc;
-  color: #fff;
+  background-color: #2A9D8F; /* Teal background on hover */
+  color: #FFFFFF; /* White text on hover */
 }
 
 .tab-navigation button.active-tab {
-  background-color: #0066cc;
-  color: white;
+  background-color: #2A9D8F;
+  color: #FFFFFF;
   transform: scale(1.1);
 }
 
 /* Content Section Styling */
 .content-section {
-  background-color: #f9f9f9;
+  background-color: #FFF8E1; /* Light peach background for warmth */
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   animation: fadeIn 0.5s ease-in-out;
-  overflow-y: auto;
+/*  overflow-y: auto;*/
 }
 
 /* Title and Content Styling */
 .content-section h2 {
   font-size: 2rem;
-  color: #333;
+  color: #333; /* Dark gray for easy readability */
   margin-bottom: 20px;
 }
 
 .content-section p {
-  font-size: 1.0rem;
-  line-height: 1.4;
-  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Slightly muted gray for paragraphs */
 }
 
+.content-section li{
+  margin-bottom: 10px;
+}
 /* Animation for smooth transitions */
 @keyframes fadeIn {
   0% {
@@ -116,16 +118,39 @@ h1::after {
     transform: translateY(0);
   }
 }
-
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .app-container {
-    width: 90%;
-    padding: 20px;
+    width: 90%; /* Adjust width for medium screens */
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 2rem; /* Slightly smaller heading */
   }
 
   .tab-navigation {
-    flex-wrap: wrap;
+    gap: 20px; /* Reduce gap between navigation buttons */
+  }
+}
+
+@media (max-width: 992px) {
+  .tab-navigation button {
+    padding: 8px 12px; /* Smaller padding for buttons */
+    font-size: 0.85rem; /* Reduce font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    width: auto;
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  .tab-navigation {
+/*    flex-wrap: wrap;*/
     gap: 10px;
   }
 
@@ -134,11 +159,47 @@ h1::after {
     font-size: 0.9rem;
   }
 
+  h1 {
+    font-size: 1.4rem; /* Smaller heading for mobile */
+  }
+
   .content-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller title in content */
   }
 
   .content-section p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
+  .content-section li {
+    font-size: 0.9rem; /* Smaller paragraph text */
   }
 }
+
+@media (max-width: 576px) {
+  .app-container {
+    padding: 15px;
+    margin-top: 10px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Even smaller heading */
+  }
+
+  .content-section h2 {
+    font-size: 1.2rem; /* Smaller title */
+  }
+
+  .content-section p {
+    font-size: 0.9rem; /* Further reduce paragraph text */
+  }
+
+  .tab-navigation {
+    gap: 5px; /* Smaller gap between buttons */
+  }
+
+  .tab-navigation button {
+    width: 100%; /* Full width buttons for mobile */
+  }
+}
+
