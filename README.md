@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Interactive Resume
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my Interactive Resume! This project showcases my skills, projects, and experience as a web developer in a dynamic and engaging way.
 
-## Available Scripts
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Future Improvements](#future-improvements)
+- [License](#license)
 
-In the project directory, you can run:
+## Description
+This interactive resume is built using React and CSS. It presents my work experience, projects, and skills in a visually appealing manner. The resume allows users to navigate through different sections seamlessly.
 
-### `npm start`
+## Features
+- **Responsive Design**: The resume adapts to various screen sizes for optimal viewing on desktops, tablets, and mobile devices.
+- **Interactive Tabs**: Navigate through different sections using interactive buttons.
+- **Animated Transitions**: Smooth transitions between sections to enhance user experience.
+- **Code Snippets**: Highlights my technical skills with embedded code snippets.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- [React](https://reactjs.org/)
+- [CSS](https://www.w3schools.com/css/)
+- HTML
+- Git & GitHub for version control
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
+To run this project locally, follow these steps:
 
-### `npm test`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vaibhavmish/interactive-resume.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd interactive-resume
+   ```
+3. Install the necessary packages:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+To start the project, run:
+```bash
+npm start
+```
+This will launch the application in your default web browser.
 
-### `npm run build`
+## Future Improvements
+- Add more interactive features such as animations and transitions.
+- Include a contact form to allow users to reach out directly.
+- Implement dark mode for better accessibility.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for checking out my interactive resume! Feel free to explore my projects and connect with me on GitHub.
