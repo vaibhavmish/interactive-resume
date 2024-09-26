@@ -9,12 +9,51 @@ body {
   align-items: center;
 }
 
+.header{
+  display: flex;
+  gap:20px;
+  flex-direction: row;
+}
+
+.header button {
+  background-color: #FFFFFF;
+  border: 2px solid #2A9D8F; /* Teal border */
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2B9A8F; /* Teal text */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  position: relative;
+  top: 30px;
+  height: 45px;
+}
+
+
 /* Container for the entire app */
 .app-container {
   width: 800px; /* Set a fixed width */
   height: 600px; /* Set a fixed height */
 /*  overflow: auto; /* Allow scrolling if content exceeds the height */
   background-color: #FFFFFF; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.app-container-dark {
+  width: 800px; /* Set a fixed width */
+  height: 600px; /* Set a fixed height */
+/*  overflow: auto; /* Allow scrolling if content exceeds the height */
+  background-color: #121246; /* Dark Gray */
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
@@ -84,6 +123,15 @@ h1::after {
 /* Content Section Styling */
 .content-section {
   background-color: #FFF8E1; /* Light peach background for warmth */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease-in-out;
+/*  overflow-y: auto;*/
+}
+
+.content-section-dark {
+  background-color: #c1e0fe;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);

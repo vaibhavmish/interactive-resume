@@ -10,7 +10,6 @@ const TabNavigation = ({activeTab, setActiveTab}) => {
           key={tab}
           onClick={() => {
             setActiveTab(tab);
-            console.log(tab);
           }}
           className={activeTab === tab ? 'active-tab' : ''}
         >
